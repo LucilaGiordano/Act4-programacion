@@ -1,0 +1,29 @@
+
+.carousel-item img {
+  height: 700px;      /* ajustá la altura que quieras */
+  object-fit: cover;  /* recorta la imagen sin deformarla */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-pink {
+  color: #e91e63;
+}
+
+.btn-pink {
+  background-color: #e91e63;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.btn-pink:hover {
+  background-color: #c2185b;
+  color: #fff;
+}
+
+/* Opcional: captions del carousel */
+.carousel-caption h2 {
+  font-size: 2rem;
+}
