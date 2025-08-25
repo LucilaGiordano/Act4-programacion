@@ -16,9 +16,10 @@
     </button>
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+       <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
       </ul>
     </div>
   </div>
@@ -26,40 +27,63 @@
 
 <header class="bg-light text-center p-5">
   <h1 class="display-4">Bienvenido a Netflix</h1>
-  <p class="lead">Pagina de soporte</p>
+  <p class="lead">Página de soporte</p>
   <img src="img/hero.jpg" class="img-fluid rounded" alt="Imagen principal">
 </header>
 
 <section class="container my-5">
   <h2 class="text-center mb-4">Nuestros servicios</h2>
   <div class="row">
+    <!-- Básico -->
     <div class="col-md-4">
       <div class="card">
         <img src="img/card1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">Descripción breve del servicio.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h5 class="card-title">Básico</h5>
+          <p class="card-text">Elige tu mejor opción.</p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#infoBasico">Ver más</a>
+        </div>
+      </div>
+      <div class="collapse mt-2" id="infoBasico">
+        <div class="card card-body">
+          Plan Básico: acceso en un dispositivo, calidad estándar y precio reducido.
+          $8 USD
         </div>
       </div>
     </div>
+
+    <!-- Estándar -->
     <div class="col-md-4">
       <div class="card">
         <img src="img/card2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">Descripción breve del servicio.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h5 class="card-title">Estándar</h5>
+          <p class="card-text">Elige tu mejor opción.</p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#infoEstandar">Ver más</a>
+        </div>
+      </div>
+      <div class="collapse mt-2" id="infoEstandar">
+        <div class="card card-body">
+          Plan Estándar: dos dispositivos a la vez, calidad HD y precio intermedio.
+          $16 USD
         </div>
       </div>
     </div>
+
+    <!-- Premium -->
     <div class="col-md-4">
       <div class="card">
         <img src="img/card3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 3</h5>
-          <p class="card-text">Descripción breve del servicio.</p>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h5 class="card-title">Premium</h5>
+          <p class="card-text">Elige tu mejor opción.</p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#infoPremium">Ver más</a>
+        </div>
+      </div>
+      <div class="collapse mt-2" id="infoPremium">
+        <div class="card card-body">
+          Plan Premium: cuatro dispositivos a la vez, calidad 4K Ultra HD y la mejor experiencia.
+          $26 USD
         </div>
       </div>
     </div>

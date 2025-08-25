@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos - Netflix</title>
+  <!-- Cargo Tailwind CSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50"> <!-- Fondo gris claro para toda la página -->
+
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white">
+  <!-- Barra de navegación fondo oscuro y texto blanco -->
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Contenedor centrado, flex para separar logo y links, padding -->
+    <a href="index.html" class="text-2xl font-bold">Netflix</a> <!-- Logo grande -->
+    <div class="space-x-4"> <!-- Espaciado entre los enlaces -->
+      <a href="#" class="hover:text-gray-300">Inicio</a> <!-- Link Inicio con efecto hover -->
+      <a href="contacto.html" class="hover:text-gray-300">Contacto</a> <!-- Link Contacto con hover -->
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-gray-100 text-center py-16">
+  <!-- Fondo gris claro, texto centrado, padding vertical grande -->
+  <h1 class="text-4xl font-bold mb-2">Bienvenido a Netflix</h1> <!-- Título grande -->
+  <p class="text-lg text-gray-700 mb-6">Página de soporte</p> <!-- Subtítulo gris -->
+  <img src="img/hero.jpg" alt="Imagen principal" class="mx-auto rounded-lg w-full max-w-3xl">
+  <!-- Imagen centrada, redondeada, ancho máximo 3xl -->
+</header>
+
+<!-- Servicios -->
+<section class="container mx-auto my-12 px-4">
+  <!-- Contenedor centrado con márgenes y padding -->
+  <h2 class="text-3xl font-bold text-center mb-8">Nuestros servicios</h2> <!-- Título de sección centrado -->
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <!-- Grid de 3 columnas en pantallas medianas, espacio entre cards -->
+
+    <!-- Card Básico -->
+    <div class="bg-white rounded shadow">
+      <!-- Caja blanca, redondeada y con sombra -->
+      <img src="img/card1.jpg" class="rounded-t" alt="Básico"> <!-- Imagen arriba redondeada -->
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Básico</h3> <!-- Título card -->
+        <p class="mb-4">Elige tu mejor opción.</p> <!-- Descripción -->
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" 
+                onclick="document.getElementById('infoBasico').classList.toggle('hidden')">
+          Ver más
+        </button>
+        <!-- Botón azul que muestra la info al hacer click -->
+        <div id="infoBasico" class="mt-4 hidden p-3 bg-gray-100 rounded">
+          Plan Básico: acceso en un dispositivo, calidad estándar y precio reducido. $8 USD
+        </div>
+        <!-- Información extra oculta hasta que se hace click -->
+      </div>
+    </div>
+
+    <!-- Card Estándar -->
+    <div class="bg-white rounded shadow">
+      <img src="img/card2.jpg" class="rounded-t" alt="Estándar">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Estándar</h3>
+        <p class="mb-4">Elige tu mejor opción.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" 
+                onclick="document.getElementById('infoEstandar').classList.toggle('hidden')">
+          Ver más
+        </button>
+        <div id="infoEstandar" class="mt-4 hidden p-3 bg-gray-100 rounded">
+          Plan Estándar: dos dispositivos a la vez, calidad HD y precio intermedio. $16 USD
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Premium -->
+    <div class="bg-white rounded shadow">
+      <img src="img/card3.jpg" class="rounded-t" alt="Premium">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Premium</h3>
+        <p class="mb-4">Elige tu mejor opción.</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" 
+                onclick="document.getElementById('infoPremium').classList.toggle('hidden')">
+          Ver más
+        </button>
+        <div id="infoPremium" class="mt-4 hidden p-3 bg-gray-100 rounded">
+          Plan Premium: cuatro dispositivos a la vez, calidad 4K Ultra HD y la mejor experiencia. $26 USD
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="text-center mb-12">
+  <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-700">
+    ¡Comenzar ahora!
+  </a>
+  <!-- Botón grande verde centrado -->
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  &copy; 2025 Mi Sitio - Todos los derechos reservados
+</footer>
+
+</body>
+</html>
+
